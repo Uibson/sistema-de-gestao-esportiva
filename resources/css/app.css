@@ -1,0 +1,445 @@
+
+/* Estilo geral */
+.cont-login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    margin: 0;
+    font-family: 'Gotham', sans-serif !important;
+}
+
+.login-container {
+    display: flex;
+    width: 100vw; /* Ocupa 100% da largura da tela */
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+    margin-top: -30px;
+}
+
+/* Left Section */
+.left-section {
+    width: 60%; /* Aumenta a largura da seção esquerda */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+    position: relative;
+    top: 10%; /* Ajusta a posição para ficar mais centrado */
+}
+
+/* Right Section */
+.right-section {
+    width: 40%; /* Aumenta a largura da seção direita */
+    background: #a300ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Formulario */
+form {
+    width: 100%; /* Garante que o formulário ocupe 100% da largura da seção */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form input group */
+.input-group {
+    width: 100%;
+    max-width: 400px; /* Define a largura máxima do input */
+    margin-bottom: 25px; /* Aumenta o espaço entre os inputs */
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px; /* Aumenta o padding dentro do input */
+    background: #f4f4f4;
+}
+
+.input-group input {
+    border: none;
+    width: 89%; /* O input vai ocupar toda a largura do seu contêiner */
+    padding-left: 0px;
+    outline: none;
+    background: transparent;
+    font-size: 14px; /* Aumenta o tamanho da fonte */
+}
+
+/* Icon style inside input */
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px; /* Aumenta o espaçamento do ícone */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    stroke: #4a4a4a;
+}
+
+/* Button Login */
+.btn-login {
+    width: 100%;
+    max-width: 400px; /* Ajusta a largura do botão */
+    background: #a300ff;
+    color: white;
+    font-weight: bold;
+    padding: 15px; /* Aumenta o padding do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Aumenta o tamanho da fonte do botão */
+}
+
+.btn-login:hover {
+    background: #8200cc;
+}
+
+/* Logo */
+.logo {
+    width: 60px; /* Aumenta o tamanho do logo */
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+/* Links */
+.text-purple {
+    color: #a300ff;
+    text-decoration: none;
+}
+
+.text-purple:hover {
+    text-decoration: underline;
+}
+
+/* Forgot Password link */
+.forgot-password {
+    font-size: 16px; /* Aumenta o tamanho da fonte do link */
+    color: #a300ff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* "Não possui conta?" abaixo do botão */
+.no-account {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.no-account a {
+    color: #a300ff;
+    text-decoration: none;
+}
+
+.no-account a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .left-section {
+        width: 100%;
+        padding: 20px;
+        top: 0%;
+    }
+
+    .right-section {
+        width: 100%;
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
+/* Definindo Gotham Regular */
+@font-face {
+    font-family: 'Gotham';
+    src: url('/fonts/Gotham-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Definindo Gotham Bold */
+@font-face {
+    font-family: 'Gotham';
+    src: url('resources/fonts/Gotham-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Definindo Gotham Light */
+@font-face {
+    font-family: 'Gotham';
+    src: url('resources/fonts/Gotham-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+/* Definindo Gotham Medium */
+@font-face {
+    font-family: 'Gotham';
+    src: url('resources/fonts/Gotham-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Gotham', sans-serif !important;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gotham', sans-serif;
+    font-weight: bold;
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Texto "Podium" */
+.podium-text {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #a300ff;
+    font-family: 'Gotham', sans-serif;
+}
+/* Lembrar senha - cor do botão ao lado ao checar */
+.form-check-input:checked {
+    background-color: #a300ff !important; /* Cor do botão de checkbox */
+    border-color: #a300ff !important;
+}
+
+
+
+/*PAGINA INICIAL GERAL*/
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #a300ff, #6a00ff);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-title {
+    color: white;
+}
+
+/* Barra de busca */
+
+/* Input da barra de busca */
+.search-input {
+    padding: 10px;
+    width: 250px; /* Largura reduzida */
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+/* Botão de busca */
+.search-button {
+    padding: 10px 20px;
+    background: #fff;
+    color: #a300ff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.search-button:hover {
+    background: #f0f0f0;
+}
+
+.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.btn-details {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #a300ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-details:hover {
+    background: #8200cc;
+}
+
+.footer {
+    background: #a300ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.py-4{
+    padding-top: 0 !important;
+}
+
+/*BANNERRR*/
+
+.banner {
+    height: 300px;
+    background: linear-gradient(135deg, #a300ff, #6a00ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Barra de Busca */
+.input-box {
+    display: flex;
+    align-items: center;
+   
+}
+
+.input-box i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.input-box input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-box button {
+    padding: 10px 20px;
+    background: #fff;
+    color: #a300ff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+    border-left: 2px solid #e4b3ff;
+}
+
+.input-box button:hover {
+    background: #f0f0f0;
+}
+
+/* Estilo do Rodapé */
+.footer {
+    background: #a300ff;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f0f0f0;
+}
