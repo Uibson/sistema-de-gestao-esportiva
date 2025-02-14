@@ -1,0 +1,47 @@
+// Fonts
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-purple {
+    color: #a300ff;
+}
+
+.bg-purple {
+    background-color: #a300ff;
+    background-image: url('../images/background-pattern.png');
+    background-size: cover;
+}
+
+.btn-purple {
+    background-color: #a300ff;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.btn-purple:hover {
+    background-color: #8000cc;
+}
+
+.input-group-text {
+    background: #f8f9fa;
+    border: none;
+}
+
+.form-control {
+    background: #f8f9fa;
+    border-radius: 25px;
+    border: none;
+}
